@@ -1,10 +1,20 @@
 /*  Design Vision Section starts Here */
 
+.line {
+  overflow: hidden;
+  display: block;
+}
+
+.letter {
+  display: inline-block;
+  visibility: hidden;
+}
+
 .dv-section {
   display: flex;
   justify-content: center;
-  align-items: center;
-  min-height: 80vh;
+  align-items: flex-start;
+  min-height: 74vh;
   width: 100%;
   background-color: var(--light-bg-color);
   padding: 0px 40px;
@@ -16,6 +26,7 @@
   display: flex;
   flex-direction: row;
   width: 100%;
+  height: 100%;
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
@@ -68,19 +79,166 @@
 }
 
 .dv-stat-number {
+  display: flex; /* Use flexbox for alignment */
+  align-items: center;
+  justify-content: center;
+}
+
+/* Add these new rules for the scrolling animation */
+.digit-roller {
+  height: 1em; /* Set height to match the font-size */
+  overflow: hidden;
+  display: inline-block;
+}
+
+.digit-column {
+  display: inline-block;
+}
+
+.digit-column span {
+  display: block;
+  height: 1em; /* Ensure each digit has the same height */
+}
+
+.dv-stat-number {
   font-family: "Morganite", Arial, sans-serif;
   font-size: 14rem;
   line-height: 1;
   font-weight: 400;
 }
 
-.dv-stat-number span {
+.dv-stat-number .plus {
   color: #6f6b61;
 }
 
 .dv-stat-description {
   font-size: 1rem;
   font-weight: 400;
+}
+
+.about-section {
+  padding: 80px 40px;
+  background-color: var(--light-bg-color);
+  color: var(--text-secondary);
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.about-container {
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-text-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 40px;
+  margin-bottom: 50px;
+  text-align: left;
+  line-height: 1.6;
+  font-size: 1.2rem;
+}
+
+.about-text-column {
+  flex: 1;
+  min-width: 280px;
+}
+
+.about-text-column .left-text {
+  text-align: left;
+}
+
+.about-text-column .right-text {
+  text-align: right;
+}
+
+.about-button-wrapper {
+  margin-bottom: 50px;
+}
+
+.about-button {
+  display: inline-block;
+  padding: 18px 45px;
+  background-color: var(--dark-bg-color);
+  color: var(--light-bg-color);
+  border-radius: 50px; /* Pill shape */
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.about-button:hover {
+  background-color: #444; /* Darken on hover */
+  transform: scale(1.05);
+}
+
+.social-icons-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.social-icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 1px solid var(--text-secondary);
+  background-color: var(--dark-bg-color);
+  border-radius: 50%;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 1.2rem;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.4s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.social-icon:hover {
+  background-color: var(--text-secondary);
+}
+
+.social-icon span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.4s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.social-icon span:last-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--light-bg-color);
+  transform: translateY(100%);
+}
+
+.social-icon:hover span:first-child {
+  transform: translateY(-100%);
+}
+
+.social-icon:hover span:last-child {
+  transform: translateY(0);
+}
+
+.fab {
+  color: var(--text-primary);
+  font-size: 1.5rem;
+}
+
+/* Responsive styles for About section */
+@media (max-width: 768px) {
+  .about-text-wrapper {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+  .about-section {
+    padding: 60px 20px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -123,7 +281,7 @@
   }
 
   .dv-section h1 {
-    font-size: 10rem;
+    font-size: 9.8rem;
   }
   .dv-stat-number {
     font-size: 8rem;
@@ -137,7 +295,7 @@
   }
 
   .dv-section h1 {
-    font-size: 6.8rem;
+    font-size: 4.8rem;
   }
   .dv-stat-number {
     font-size: 6rem;

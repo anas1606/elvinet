@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
     <title>Home</title>
   </head>
 
@@ -213,20 +220,116 @@
       <div class="dv-main-container">
         <div class="dv-hero-content">
           <div class="dv-subtitle">DESIGN VISION</div>
-          <h1>MODERN<br />ARCHITECTURE</h1>
+          <h1>
+            <div id="line1" class="line">
+              <span class="letter">M</span><span class="letter">O</span
+              ><span class="letter">D</span><span class="letter">E</span
+              ><span class="letter">R</span><span class="letter">N</span>
+            </div>
+            <div id="line2" class="line">
+              <span class="letter">A</span><span class="letter">R</span
+              ><span class="letter">C</span><span class="letter">H</span
+              ><span class="letter">I</span><span class="letter">T</span
+              ><span class="letter">E</span><span class="letter">C</span
+              ><span class="letter">T</span><span class="letter">U</span
+              ><span class="letter">R</span><span class="letter">E</span>
+            </div>
+          </h1>
         </div>
 
         <div class="dv-left-side">
-          <div class="dv-stat-number"><span>+</span>15</div>
+          <div class="dv-stat-number">
+            <span class="plus">+</span>
+            <div class="digit-roller">
+              <div class="digit-column" id="col1">
+                <span>1</span><span>8</span><span>7</span><span>6</span
+                ><span>5</span><span>4</span><span>3</span><span>2</span
+                ><span>1</span>
+              </div>
+            </div>
+            <div class="digit-roller">
+              <div class="digit-column" id="col2">
+                <!-- Numbers are reversed for downward scroll -->
+                <span>5</span><span>4</span><span>3</span><span>2</span
+                ><span>1</span><span>0</span>
+              </div>
+            </div>
+          </div>
           <div class="dv-stat-description">Years of experience</div>
         </div>
 
         <div class="dv-right-side">
-          <div class="dv-stat-number">98<span>+</span></div>
+          <div class="dv-stat-number">
+            <div class="digit-roller">
+              <div class="digit-column" id="col3">
+                <span>9</span><span>1</span><span>2</span><span>3</span
+                ><span>4</span><span>5</span><span>6</span><span>7</span
+                ><span>8</span><span>9</span>
+              </div>
+            </div>
+            <div class="digit-roller">
+              <div class="digit-column" id="col4">
+                <!-- Numbers are reversed for downward scroll -->
+                <span>8</span><span>7</span><span>6</span><span>5</span
+                ><span>4</span><span>3</span><span>2</span><span>1</span
+                ><span>0</span>
+              </div>
+            </div>
+            <span class="plus">+</span>
+          </div>
           <div class="dv-stat-description">Successful Projects</div>
         </div>
       </div>
     </section>
+
+    <section class="about-section">
+      <div class="about-container">
+        <!-- Top text content -->
+        <div class="about-text-wrapper">
+          <div class="about-text-column">
+            <p class="left-text">
+              We create architecture that balances form, function, and context.
+              Our spaces reflect a deep respect for people, place, and purpose —
+              shaped with care, vision, and lasting intent.
+            </p>
+          </div>
+          <div class="about-text-column">
+            <p class="right-text">
+              Every project is an opportunity to connect design with meaning.
+              Through timeless forms and details, we create environments that
+              inspire and serve those who live, work and gather there.
+            </p>
+          </div>
+        </div>
+
+        <!-- About Us Button -->
+        <div class="about-button-wrapper">
+          <a href="#about" class="about-button">ABOUT US</a>
+        </div>
+
+        <!-- Social Media Icons with UPDATED HTML structure -->
+        <div class="social-icons-wrapper">
+          <a href="#" class="social-icon">
+            <span><i class="fab fa-instagram"></i></span>
+            <span><i class="fab fa-instagram"></i></span>
+          </a>
+          <a href="#" class="social-icon">
+            <span><i class="fab fa-twitter"></i></span>
+            <span><i class="fab fa-twitter"></i></span>
+          </a>
+          <a href="#" class="social-icon">
+            <span><i class="fab fa-linkedin-in"></i></span>
+            <span><i class="fab fa-linkedin-in"></i></span>
+          </a>
+          <a href="#" class="social-icon">
+            <span><i class="fab fa-facebook-f"></i></span>
+            <span><i class="fab fa-facebook-f"></i></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--  Design Vision Section Ends  -->
 
     <script src="assets/script/script.js"></script>
   </body>
