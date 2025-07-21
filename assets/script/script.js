@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const observerOptions = {
     root: null,
     rootMargin: "0px",
-    threshold: 0.6, // Trigger when 40% of the section is visible
+    threshold: 0.4, // Trigger when 40% of the section is visible
   };
 
   // This function runs when the section's visibility changes
@@ -104,3 +104,94 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+(function () {
+  const sliderComponent = document.querySelector(".hc-testimonial-cards");
+  if (!sliderComponent) return; // Don't run if the component isn't on the page
+
+  const track = sliderComponent.querySelector(".slider-track");
+  const cards = Array.from(track.children);
+  const nextButton = sliderComponent.querySelector("#next-btn");
+  const prevButton = sliderComponent.querySelector("#prev-btn");
+  const paginationContainer =
+    sliderComponent.querySelector(".slider-pagination");
+
+  let currentIndex = 0;
+  let itemsVisible = 3; // Default for desktop
+  let totalPages = 0;
+
+  function createPagination() {
+    paginationContainer.innerHTML = ""; // Clear old dots
+    totalPages = Math.max(cards.length - itemsVisible + 1, 1);
+
+    if (totalPages <= 1) return; // Don't show dots if not needed
+
+    for (let i = 0; i < totalPages; i++) {
+      const dot = document.createElement("button");
+      dot.classList.add("pagination-dot");
+      dot.addEventListener("click", () => {
+        currentIndex = i;
+        updateSliderPosition();
+      });
+      paginationContainer.appendChild(dot);
+    }
+    updateDots();
+  }
+
+  function updateDots() {
+    const dots = paginationContainer.querySelectorAll(".pagination-dot");
+    dots.forEach((dot, index) => {
+      dot.classList.toggle("active", index === currentIndex);
+    });
+  }
+
+  function updateSliderPosition() {
+    const slideWidth = track.clientWidth / itemsVisible;
+    track.style.transform = "translateX(" + -currentIndex * slideWidth + "px)";
+    updateDots();
+  }
+
+  function updateItemsVisible() {
+    if (window.innerWidth <= 768) {
+      itemsVisible = 1;
+    } else if (window.innerWidth <= 1024) {
+      itemsVisible = 2;
+    } else {
+      itemsVisible = 3;
+    }
+
+    const maxIndex = cards.length - itemsVisible;
+    if (currentIndex > maxIndex) {
+      currentIndex = maxIndex < 0 ? 0 : maxIndex;
+    }
+
+    createPagination();
+    updateSliderPosition();
+  }
+
+  nextButton.addEventListener("click", () => {
+    const maxIndex = cards.length - itemsVisible;
+    if (currentIndex < maxIndex) {
+      currentIndex++;
+    } else {
+      currentIndex = 0; // Loop back to the start
+    }
+    updateSliderPosition();
+  });
+
+  prevButton.addEventListener("click", () => {
+    const maxIndex = cards.length - itemsVisible;
+    if (currentIndex > 0) {
+      currentIndex--;
+    } else {
+      currentIndex = maxIndex; // Loop to the end
+    }
+    updateSliderPosition();
+  });
+
+  // Update on window resize
+  window.addEventListener("resize", updateItemsVisible);
+
+  // Initial setup
+  updateItemsVisible();
+})();

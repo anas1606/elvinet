@@ -1,0 +1,259 @@
+
+.fp-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 76vh;
+  position: relative;
+  width: 100%;
+  border: 1px solid var(--border-color);
+  background-color: var(--light-bg-color);
+  color: var(--text-secondary);
+  box-sizing: border-box;
+}
+
+.fp-main-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.fp-hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex-shrink: 0;
+  order: 2;
+}
+
+.fp-subtitle {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  text-align: center;
+  letter-spacing: 4px;
+  font-weight: 400;
+}
+
+.fp-section h1 {
+  font-size: 18rem;
+  font-family: "Morganite", Arial, sans-serif;
+  color: var(--text-secondary);
+  font-weight: 400;
+  text-align: center;
+  line-height: 1;
+  margin: 0;
+}
+
+.line {
+  overflow: hidden;
+  display: block;
+}
+
+.letter {
+  display: inline-block;
+  visibility: hidden;
+}
+
+.fp-left-side {
+  position: absolute;
+  bottom: 4rem;
+  left: 40px;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.fp-right-side {
+  position: absolute;
+  bottom: 4rem;
+  right: 40px;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.stacking-container {
+  position: relative;
+  background-color: var(--light-bg-color);
+  color: var(--text-secondary);
+}
+
+.project-page {
+  height: 100vh;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.project-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  background-color: var(--light-bg-color);
+}
+
+/* --- Content and Image Styling --- */
+.project-image {
+  width: 100%;
+  height: 100vh;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* For the alternating layout, we change the grid order */
+.project-layout.reverse .project-image {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+.project-layout.reverse .project-content {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+/* --- Typography and Button Styling --- */
+.project-year {
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+  color: var(--text-hover);
+}
+
+.project-content h2 {
+  font-family: "Morganite", Arial, sans-serif;
+  font-size: 14rem;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.project-category {
+  font-size: 0.8rem;
+  letter-spacing: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+  color: var(--text-secondary);
+  font-family: "Inter", Arial, sans-serif;
+}
+
+.view-project-btn {
+  display: inline-block;
+  background-color: var(--text-secondary);
+  color: var(--light-bg-color);
+  padding: 1rem 2.5rem;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 1.5px;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.view-project-btn:hover {
+  background-color: #333;
+}
+
+@media (max-width: 768px) {
+  .project-layout,
+  .project-layout.reverse {
+    grid-template-columns: 1fr;
+  }
+
+  .project-image {
+    height: 40vh;
+  }
+
+  .project-layout.reverse .project-image,
+  .project-layout.reverse .project-content {
+    grid-column: 1 / 2;
+  }
+
+  .project-layout.reverse .project-image {
+    grid-row: 1 / 2;
+  }
+  .project-layout.reverse .project-content {
+    grid-row: 2 / 3;
+  }
+
+  .project-content h2 {
+    font-size: 9.8rem;
+  }
+
+  .project-category {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .fp-main-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem 14rem;
+  }
+
+  .fp-hero-content {
+    order: 1;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .fp-section h1 {
+    font-size: 10rem;
+  }
+}
+
+/* Phone View */
+
+@media (max-width: 768px) {
+  .fp-main-container {
+    gap: 2rem 6rem;
+  }
+
+  .fp-section h1 {
+    font-size: 9.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .fp-main-container {
+    flex-direction: row;
+    gap: 2rem 2rem;
+  }
+
+  .fp-section h1 {
+    font-size: 6.8rem;
+  }
+}
