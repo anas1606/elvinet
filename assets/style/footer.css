@@ -8,12 +8,14 @@ a {
 footer {
   background-color: var(--bg-color);
   color: var(--text-color);
-  padding: 80px 0 40px;
+  /* padding: 80px 0 40px; */
+  min-height: 100vh;
 }
 
 .footer-container {
   max-width: 100%;
   margin: 0 auto;
+  width: 100%;
   padding: 0 40px;
 }
 
@@ -67,16 +69,20 @@ footer {
 .nav-column {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  align-items: center;
+  gap: 6px;
 }
 
 .nav-link {
-  padding: 12px 20px;
+  display: inline-block;
+  width: auto;
+  padding: 12px 18px;
+  margin: 4px 20px;
   border: 1px solid var(--border-color);
-  border-radius: 30px;
+  border-radius: 20px;
   text-align: center;
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -116,11 +122,61 @@ footer {
   color: var(--accent-color);
 }
 
+.footer-bottom-text {
+  padding: 40px 20px;
+  margin-top: 6rem;
+  overflow: hidden;
+  height: 26rem;
+  position: relative;
+}
+
+.footer-bottom-text h2 {
+  display: flex;
+  font-family: "Morganite", Arial, sans-serif;
+  justify-content: center;
+  align-items: center;
+  font-size: 52rem;
+  margin: 4rem auto 0;
+  font-weight: 400;
+  letter-spacing: 2.4rem;
+  text-transform: uppercase;
+  color: #504c46;
+  padding: 2rem;
+  max-width: fit-content;
+  position: relative;
+  bottom: 4rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .footer-bottom-text {
+    height: 26rem;
+  }
+  .footer-bottom-text h2 {
+    font-size: 30rem;
+    font-weight: 600;
+    letter-spacing: 2.4rem;
+    margin: 2rem auto 0;
+    bottom: -3rem;
+  }
+}
+
 /* Responsive adjustments for smaller screens */
 @media (max-width: 992px) {
   .footer-nav-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 40px 20px;
+  }
+  .footer-bottom-text {
+    height: 26rem;
+  }
+  .footer-bottom-text h2 {
+    font-size: 22rem;
+    font-weight: 600;
+    left: 2rem;
+    letter-spacing: 2.4rem;
+    margin: 2rem auto 0;
+    bottom: -3rem;
   }
 }
 
@@ -128,6 +184,20 @@ footer {
   .footer-bottom {
     flex-direction: column;
     gap: 25px;
+  }
+
+  .footer-bottom-text {
+    height: 14.8rem;
+    overflow: hidden;
+    position: relative;
+  }
+  .footer-bottom-text h2 {
+    font-size: 12rem;
+    left: 1rem;
+    letter-spacing: 1rem;
+    text-align: center;
+    bottom: -2rem;
+    font-weight: 700;
   }
 }
 
@@ -141,5 +211,15 @@ footer {
     align-items: center;
     gap: 15px;
     text-align: center;
+  }
+
+  .footer-bottom-text {
+    height: 13rem;
+  }
+  .footer-bottom-text h2 {
+    font-size: 8.6rem;
+    letter-spacing: 1rem;
+    bottom: -2rem;
+    font-weight: 800;
   }
 }
