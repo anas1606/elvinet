@@ -1,0 +1,117 @@
+/*  * Hero Section Starts here  */
+.ridge-hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-bg-color);
+  color: var(--text-secondary);
+  height: calc(90vh - 4.6rem);
+  width: 100%;
+  padding: 0px 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.ridge-hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.ridge-hero-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.ridge-hero-title {
+  font-family: "Morganite", sans-serif;
+  font-size: 20rem;
+  font-weight: 200;
+  color: var(--text-secondary);
+  line-height: 1;
+  letter-spacing: 0.02em;
+  margin: 0;
+  padding: 0;
+}
+
+.ridge-hero-subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+  max-width: 450px;
+  line-height: 1.6;
+  margin: 2rem 0 0 0;
+}
+
+.ridge-hero-info-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0rem 0rem 2rem 0rem;
+}
+
+.ridge-hero-info-pill {
+  border: 1px solid var(--border-color--project);
+  border-radius: var(--border-radius);
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  background-color: var(--light-bg-color);
+}
+
+.ridge-hero-info-pill-value {
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .ridge-hero-section {
+    padding: 1.5rem;
+  }
+
+  .ridge-hero-subtitle {
+    margin-top: 1.5rem;
+  }
+
+  .ridge-hero-title {
+    font-size: 14rem;
+  }
+
+  .ridge-hero-info-bar {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .ridge-hero-section {
+    padding: 1rem;
+  }
+  .ridge-hero-title {
+    font-size: 10rem;
+  }
+
+  .ridge-hero-subtitle {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+  }
+
+  .ridge-hero-info-pill {
+    width: 100%;
+    text-align: center;
+    padding: 0.75rem 1rem;
+  }
+}
+/**  Hero Section Ends Here  */

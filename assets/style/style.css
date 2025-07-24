@@ -6,6 +6,8 @@
 @import url("happyClint.css");
 @import url("startBulding.css");
 @import url("footer.css");
+@import url("projectHeroSection.css");
+@import url("projectDetailsSection.css");
 
 @font-face {
   font-family: "Morganite";
@@ -28,6 +30,7 @@
   --text-secondary: #25211d;
   --text-hover: #928f87;
   --border-radius: 14px;
+  --border-color--project: #d3d1c8;
   --border-color: #35322d;
   --logo-scroll-duration: 30s;
 }
@@ -43,3 +46,6 @@ body {
   background-color: var(--dark-bg-color);
   color: var(--text-primary);
 }
+
+
+
