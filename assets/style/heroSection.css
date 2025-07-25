@@ -76,42 +76,48 @@
 .spacer-xsmall {
   height: 2.5rem;
 }
-
-.cards-viewport {
+.cards-wrapper {
   position: absolute;
   top: 50%;
   left: 0;
   width: 100%;
-  height: 300px;
+  height: 100vh;
   transform: translateY(-50%);
   overflow: hidden;
   z-index: 2;
 }
 
-.cards-wrapper {
-  display: flex;
-
+.marquee-line {
   position: absolute;
+  top: 70%;
+  /* border: 2px solid red; */
   left: 0;
-  top: 0;
-
-  animation: slide-across 12s linear infinite;
+  transform: translateY(-50%);
+  display: flex;
+  flex-wrap: nowrap;
+  width: fit-content;
 }
 
 .card {
-  width: 220px;
-  height: 300px;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  width: 260px;
+  height: 340px;
+  background-color: transparent;
+  box-shadow: none;
   flex-shrink: 0;
-  margin: 0 1rem; /* Space between cards */
+  position: absolute;
+  visibility: hidden;
+  top: 50%;
+  left: 50%;
+  margin: -150px 0 0 -110px;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 @keyframes slide-across {
