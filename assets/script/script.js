@@ -195,3 +195,35 @@ document.addEventListener("DOMContentLoaded", function () {
   // Initial setup
   updateItemsVisible();
 })();
+
+document.addEventListener("DOMContentLoaded", function () {
+  const textSteps = document.querySelectorAll(".text-step");
+  const images = document.querySelectorAll(".scroll-image");
+
+  const observerOptions = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.6,
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const imageIdToShow = entry.target.getAttribute("data-img");
+
+        images.forEach((img) => {
+          img.classList.remove("is-active");
+        });
+
+        const imageToShow = document.getElementById(imageIdToShow);
+        if (imageToShow) {
+          imageToShow.classList.add("is-active");
+        }
+      }
+    });
+  }, observerOptions);
+
+  textSteps.forEach((step) => {
+    observer.observe(step);
+  });
+});

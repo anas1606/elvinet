@@ -51,6 +51,7 @@
   line-height: 0.9;
   letter-spacing: 6px;
   margin: 0;
+  z-index: 3;
 }
 .left-side {
   position: absolute;
@@ -74,6 +75,53 @@
 
 .spacer-xsmall {
   height: 2.5rem;
+}
+
+.cards-viewport {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  transform: translateY(-50%);
+  overflow: hidden;
+  z-index: 2;
+}
+
+.cards-wrapper {
+  display: flex;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  animation: slide-across 12s linear infinite;
+}
+
+.card {
+  width: 220px;
+  height: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  flex-shrink: 0;
+  margin: 0 1rem; /* Space between cards */
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes slide-across {
+  0% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
 }
 
 @media (max-width: 1200px) {
