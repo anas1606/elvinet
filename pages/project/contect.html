@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ridge</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      xintegrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="../../assets/style/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  </head>
+  <body>
+    <!-- Navbar Starts Here -->
+
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#">
+          <img
+            src="../../assets/images/navLogo.png"
+            alt="Logo"
+            class="logo-image"
+          />
+        </a>
+      </div>
+      <div class="nav-left">
+        <ul>
+          <li>
+            <a href="index.html"><span>Home</span><span>Home</span></a>
+          </li>
+          <li>
+            <a href="pages/aboutus.html"
+              ><span>About</span><span>About</span></a
+            >
+          </li>
+          <li>
+            <a href="pages/clint.html"
+              ><span>Client</span><span>Client</span></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <ul>
+          <li>
+            <a href="./pages/blog.html"><span>Blog</span><span>Blog</span></a>
+          </li>
+          <li>
+            <a href="./pages/project.html"
+              ><span>Product</span><span>Product</span></a
+            >
+          </li>
+          <li>
+            <a href="./pages/contact.html"
+              ><span>Contact Us</span><span>Contact Us</span></a
+            >
+          </li>
+        </ul>
+      </div>
+      <button class="menu-toggle" id="mobile-menu" aria-label="Toggle Menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="36"
+          height="36"
+          fill="currentColor"
+          class="bi bi-list"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+          />
+        </svg>
+      </button>
+    </nav>
+    <!-- Navbar Ends -->
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pages/aboutus.html">About</a></li>
+        <li><a href="pages/clint.html">Client</a></li>
+        <li><a href="./pages/blog.html">Blog</a></li>
+        <li><a href="./pages/project.html">Product</a></li>
+        <li><a href="./pages/contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Navbar Ends -->
+
+    <!--  Hero Section Starts Here -->
+
+    <!-- Start Building Section Starts  -->
+
+    <section class="building-section">
+      <div class="building-main-container">
+        <div class="building-hero-content">
+          <div class="building-subtitle">Contact</div>
+          <h1>GET IN TOUCH</h1>
+          <p>
+            Reach out to start the conversation, schedule a consultation, or ask
+            any questions.
+          </p>
+
+          <div class="social-buttons">
+            <a
+              href="#"
+              class="social-button social-button-instagram"
+              aria-label="Instagram"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="#"
+              class="social-button social-button-x"
+              aria-label="X (formerly Twitter)"
+            >
+              <i class="fab fa-xing"></i>
+            </a>
+            <a
+              href="#"
+              class="social-button social-button-linkedin"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="#"
+              class="social-button social-button-facebook"
+              aria-label="Facebook"
+            >
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  Hero Section Ends Here -->
+
+    <!-- Contact form and card section  Starts -->
+
+    <section class="contact-form">
+      <div class="cf-main-container">
+        <!-- Contact Form Section -->
+        <div class="form-container">
+          <form action="#" method="POST" class="contact-form-grid">
+            <!-- First Name -->
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" name="first-name" />
+            </div>
+
+            <!-- Last Name -->
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" name="last-name" />
+            </div>
+
+            <!-- Subject -->
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" />
+            </div>
+
+            <!-- Email Address -->
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" />
+            </div>
+
+            <!-- Message -->
+            <div class="form-group full-width">
+              <label for="message">Message</label>
+              <textarea id="message" name="message"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Info Cards Section -->
+        <div class="info-cards-container">
+          <!-- Email Card -->
+          <div class="info-card">
+            <i class="fas fa-envelope icon"></i>
+            <h3>EMAIL</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in ero.
+            </p>
+            <a href="mailto:hi@contact.com">hi@contact.com</a>
+          </div>
+
+          <!-- Phone Card -->
+          <div class="info-card">
+            <i class="fas fa-phone icon"></i>
+            <h3>PHONE</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in ero.
+            </p>
+            <a href="tel:+15555555555">+1 (555) 555-5555</a>
+          </div>
+
+          <!-- Office Card -->
+          <div class="info-card">
+            <i class="fas fa-map-marker-alt icon"></i>
+            <h3>OFFICE</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in ero.
+            </p>
+            <a href="#">1276 Hicksville Rd, New York</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact form and card section  Ends  -->
+
+    <!-- visit us section  starts -->
+
+    <section class="visit-us-section">
+      <div class="visit-main-container">
+        <div class="visit-hero-content"></div>
+      </div>
+    </section>
+
+    <!-- visit us section  Ends -->
+
+    <!-- Footer starts here  -->
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="footer-logo">✳</div>
+          <p class="tagline">ARCHITECTURE THAT ELEVATES EVERYDAY LIVING.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="X"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a href="#" aria-label="LinkedIn"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a href="#" aria-label="Facebook"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="footer-nav-grid">
+          <div class="nav-column">
+            <a href="#" class="nav-link">HOME 01</a>
+            <a href="#" class="nav-link">HOME 02</a>
+            <a href="#" class="nav-link">HOME 03</a>
+          </div>
+          <div class="nav-column">
+            <a href="#" class="nav-link">PROJECTS 01</a>
+            <a href="#" class="nav-link">PROJECTS 02</a>
+            <a href="#" class="nav-link">PROJECTS 03</a>
+          </div>
+          <div class="nav-column">
+            <a href="#" class="nav-link">CONTACT 01</a>
+            <a href="#" class="nav-link">CONTACT 02</a>
+            <a href="#" class="nav-link">CONTACT 03</a>
+          </div>
+          <div class="nav-column">
+            <a href="#" class="nav-link">SERVICES</a>
+            <a href="#" class="nav-link">ABOUT</a>
+            <a href="#" class="nav-link">BLOG</a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-credits">
+            <p>POWERED BY <strong>WEBFLOW</strong></p>
+            <p>CREATED BY <strong>FLOWAZE</strong></p>
+          </div>
+          <div class="footer-legal">
+            <a href="#">STYLE GUIDE</a>
+            <a href="#">LICENSES</a>
+            <a href="#">CHANGELOG</a>
+          </div>
+        </div>
+        <div class="footer-bottom-text">
+          <h2>ELVINET</h2>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Footer ends here  -->
+
+    <script src="../../assets/script/script.js"></script>
+  </body>
+</html>

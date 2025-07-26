@@ -1,0 +1,61 @@
+
+.red-font {
+  color: red;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: var(--dark-bg-color);
+  color: var(--text-primary);
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 1.25rem;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+
+.social-button i {
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-button::before {
+  position: absolute;
+  font-family: "Font Awesome 6 Brands";
+  font-weight: 400;
+  color: var(--text-primary);
+  transform: translateY(50px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-button:hover i {
+  transform: translateY(-50px);
+}
+
+.social-button:hover::before {
+  transform: translateY(0);
+}
+
+.social-button-instagram::before {
+  content: "\f16d";
+}
+.social-button-x::before {
+  content: "\f168";
+}
+.social-button-linkedin::before {
+  content: "\f0e1";
+}
+.social-button-facebook::before {
+  content: "\f39e";
+}
