@@ -411,3 +411,23 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+// JavaScript for the location switcher
+document.addEventListener("DOMContentLoaded", function () {
+  const locationItems = document.querySelectorAll(".location-item");
+  const officeImage = document.getElementById("office-image");
+
+  locationItems.forEach((item) => {
+    item.addEventListener("click", function () {
+      // Remove active class from all items
+      locationItems.forEach((i) => i.classList.remove("active"));
+
+      // Add active class to the clicked item
+      this.classList.add("active");
+
+      // Change the image source
+      const newImageSrc = this.getAttribute("data-image");
+      officeImage.src = newImageSrc;
+    });
+  });
+});
