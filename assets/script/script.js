@@ -2,14 +2,14 @@ const menuToggle = document.getElementById("mobile-menu");
 const mobileNav = document.getElementById("mobileNavOverlay");
 
 menuToggle.addEventListener("click", () => {
-  mobileNav.classList.toggle("active");
-  menuToggle.classList.toggle("active");
+  mobileNav.classList.toggle("ab-active");
+  menuToggle.classList.toggle("ab-active");
 });
 
 mobileNav.querySelectorAll("a").forEach((link) => {
   link.addEventListener("click", () => {
-    mobileNav.classList.remove("active");
-    menuToggle.classList.remove("active");
+    mobileNav.classList.remove("ab-active");
+    menuToggle.classList.remove("ab-active");
   });
 });
 
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
     masterTl = gsap.timeline();
 
     // Set initial positions for all animated elements
-    gsap.set(".letter", { y: "101%", autoAlpha: 1 });
+    gsap.set(".ab-letter", { y: "101%", autoAlpha: 1 });
 
     const col1 = document.getElementById("col1");
     const col2 = document.getElementById("col2");
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // The master animation timeline
     masterTl
-      .to(".letter", {
+      .to(".ab-letter", {
         y: "0%",
         duration: 0.8,
         ease: "back.out(1.7)",
@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // --- Intersection Observer to trigger animation on scroll ---
-  const animatedSection = document.querySelector(".dv-section");
+  const animatedSection = document.querySelector(".ab-dv-section");
 
   // These options control when the observer triggers
   const observerOptions = {
@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const observerCallback = (entries, observer) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        entry.target.classList.add("is-visible");
+        entry.target.classList.add("ab-is-visible");
 
         if (!animationHasPlayed) {
           setTimeout(playAnimation, 200);
@@ -99,22 +99,23 @@ document.addEventListener("DOMContentLoaded", function () {
     clearTimeout(resizeTimer);
     if (animationHasPlayed) {
       animationHasPlayed = false;
-      animatedSection.classList.remove("is-visible");
+      animatedSection.classList.remove("ab-is-visible");
       observer.observe(animatedSection);
     }
   });
 });
 
 (function () {
-  const sliderComponent = document.querySelector(".hc-testimonial-cards");
+  const sliderComponent = document.querySelector(".ab-hc-testimonial-cards");
   if (!sliderComponent) return; // Don't run if the component isn't on the page
 
-  const track = sliderComponent.querySelector(".slider-track");
+  const track = sliderComponent.querySelector(".ab-slider-track");
   const cards = Array.from(track.children);
   const nextButton = sliderComponent.querySelector("#next-btn");
   const prevButton = sliderComponent.querySelector("#prev-btn");
-  const paginationContainer =
-    sliderComponent.querySelector(".slider-pagination");
+  const paginationContainer = sliderComponent.querySelector(
+    ".ab-slider-pagination"
+  );
 
   let currentIndex = 0;
   let itemsVisible = 3; // Default for desktop
@@ -128,7 +129,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     for (let i = 0; i < totalPages; i++) {
       const dot = document.createElement("button");
-      dot.classList.add("pagination-dot");
+      dot.classList.add("ab-pagination-dot");
       dot.addEventListener("click", () => {
         currentIndex = i;
         updateSliderPosition();
@@ -139,9 +140,9 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function updateDots() {
-    const dots = paginationContainer.querySelectorAll(".pagination-dot");
+    const dots = paginationContainer.querySelectorAll(".ab-pagination-dot");
     dots.forEach((dot, index) => {
-      dot.classList.toggle("active", index === currentIndex);
+      dot.classList.toggle("ab-active", index === currentIndex);
     });
   }
 
@@ -197,8 +198,8 @@ document.addEventListener("DOMContentLoaded", function () {
 })();
 
 document.addEventListener("DOMContentLoaded", function () {
-  const textSteps = document.querySelectorAll(".text-step");
-  const images = document.querySelectorAll(".scroll-image");
+  const textSteps = document.querySelectorAll(".ab-text-step");
+  const images = document.querySelectorAll(".ab-scroll-image");
 
   const observerOptions = {
     root: null,
@@ -212,12 +213,12 @@ document.addEventListener("DOMContentLoaded", function () {
         const imageIdToShow = entry.target.getAttribute("data-img");
 
         images.forEach((img) => {
-          img.classList.remove("is-active");
+          img.classList.remove("ab-is-active");
         });
 
         const imageToShow = document.getElementById(imageIdToShow);
         if (imageToShow) {
-          imageToShow.classList.add("is-active");
+          imageToShow.classList.add("ab-is-active");
         }
       }
     });
@@ -231,7 +232,8 @@ document.addEventListener("DOMContentLoaded", function () {
 //  CARD FLIP ANIMATION
 
 document.addEventListener("DOMContentLoaded", function () {
-  const wrapper = document.querySelector(".cards-wrapper");
+  const wrapper = document.querySelector(".ab-cards-wrapper");
+  if (!wrapper) return; // Exit if the wrapper doesn't exist
 
   // Updated cardData array with your local paths
   const cardData = [
@@ -250,7 +252,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const cards = cardData.map((url) => {
     const card = document.createElement("div");
-    card.classList.add("card");
+    card.classList.add("ab-card");
     const img = document.createElement("img");
     img.src = url;
     card.appendChild(img);
@@ -358,7 +360,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // --- STAGE 4: SETUP AND START INFINITE MARQUEE ---
   function setupAndStartMarquee() {
     const marqueeLine = document.createElement("div");
-    marqueeLine.classList.add("marquee-line");
+    marqueeLine.classList.add("ab-marquee-line");
     wrapper.innerHTML = "";
     wrapper.appendChild(marqueeLine);
 
@@ -390,7 +392,7 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     });
 
-    const allCards = gsap.utils.toArray(".card");
+    const allCards = gsap.utils.toArray(".ab-card");
     allCards.forEach((card) => {
       card.addEventListener("mouseenter", () => {
         gsap.to(card, {
@@ -414,16 +416,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // JavaScript for the location switcher
 document.addEventListener("DOMContentLoaded", function () {
-  const locationItems = document.querySelectorAll(".location-item");
+  const locationItems = document.querySelectorAll(".ab-location-item");
   const officeImage = document.getElementById("office-image");
+  if (!officeImage) return; // Exit if element doesn't exist
 
   locationItems.forEach((item) => {
     item.addEventListener("click", function () {
       // Remove active class from all items
-      locationItems.forEach((i) => i.classList.remove("active"));
+      locationItems.forEach((i) => i.classList.remove("ab-active"));
 
       // Add active class to the clicked item
-      this.classList.add("active");
+      this.classList.add("ab-active");
 
       // Change the image source
       const newImageSrc = this.getAttribute("data-image");

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>about us</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      xintegrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="../../assets/style/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#">
+          <img
+            src="../assets/images/navLogo.png"
+            alt="Logo"
+            class="logo-image"
+          />
+        </a>
+      </div>
+      <div class="nav-left">
+        <ul>
+          <li>
+            <a href="index.html"><span>Home</span><span>Home</span></a>
+          </li>
+          <li>
+            <a href="pages/aboutus.html"
+              ><span>About</span><span>About</span></a
+            >
+          </li>
+          <li>
+            <a href="pages/clint.html"
+              ><span>Client</span><span>Client</span></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <ul>
+          <li>
+            <a href="./pages/blog.html"><span>Blog</span><span>Blog</span></a>
+          </li>
+          <li>
+            <a href="./pages/project/ridge.html"
+              ><span>Product</span><span>Product</span></a
+            >
+          </li>
+          <li>
+            <a href="./pages/contect.html"
+              ><span>Contact Us</span><span>Contact Us</span></a
+            >
+          </li>
+        </ul>
+      </div>
+      <button class="menu-toggle" id="mobile-menu" aria-label="Toggle Menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="36"
+          height="36"
+          fill="currentColor"
+          class="bi bi-list"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+          />
+        </svg>
+      </button>
+    </nav>
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pages/aboutus.html">About</a></li>
+        <li><a href="pages/clint.html">Client</a></li>
+        <li><a href="./pages/blog.html">Blog</a></li>
+        <li><a href="./pages/project.html">Product</a></li>
+        <li><a href="./pages/contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!--   hero section Starts -->
+    <section class="aboutus-section">
+      <div class="aboutus-main-container">
+        <div class="aboutus-hero-content">
+          <div class="aboutus-subtitle">® Since 2010</div>
+          <h1>STUDIO STORY</h1>
+          <div class="aboutus-subtitle">NEW YORK,</div>
+
+          <div class="social-buttons">
+            <a
+              href="#"
+              class="social-button social-button-instagram"
+              aria-label="Instagram"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="#"
+              class="social-button social-button-x"
+              aria-label="X (formerly Twitter)"
+            >
+              <i class="fab fa-xing"></i>
+            </a>
+            <a
+              href="#"
+              class="social-button social-button-linkedin"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="#"
+              class="social-button social-button-facebook"
+              aria-label="Facebook"
+            >
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--   hero section Ends -->
+
+    <!-- about us our story  Section Starts Here -->
+
+    <section class="ab-dv-section">
+      <div class="ab-dv-main-container">
+        <div class="ab-dv-hero-content">
+          <div class="ab-dv-subtitle">Studio Origins</div>
+          <h1>
+            <div id="line1" class="ab-line">
+              <span class="ab-letter">O</span><span class="ab-letter">U</span
+              ><span class="ab-letter">R</span> <span class="ab-letter">S</span
+              ><span class="ab-letter">T</span><span class="ab-letter">O</span
+              ><span class="ab-letter">R</span><span class="ab-letter">Y</span>
+            </div>
+          </h1>
+        </div>
+
+        <div class="ab-dv-left-side">
+          <div class="ab-dv-stat-number">
+            <span class="ab-plus">+</span>
+            <div class="ab-digit-roller">
+              <div class="ab-digit-column" id="col1">
+                <span>1</span><span>8</span><span>7</span><span>6</span
+                ><span>5</span><span>4</span><span>3</span><span>2</span
+                ><span>1</span>
+              </div>
+            </div>
+            <div class="ab-digit-roller">
+              <div class="ab-digit-column" id="col2">
+                <span>5</span><span>4</span><span>3</span><span>2</span
+                ><span>1</span><span>0</span>
+              </div>
+            </div>
+          </div>
+          <div class="ab-dv-stat-description">Years of experience</div>
+        </div>
+
+        <div class="ab-dv-right-side">
+          <div class="ab-dv-stat-number">
+            <div class="ab-digit-roller">
+              <div class="ab-digit-column" id="col3">
+                <span>9</span><span>1</span><span>2</span><span>3</span
+                ><span>4</span><span>5</span><span>6</span><span>7</span
+                ><span>8</span><span>9</span>
+              </div>
+            </div>
+            <div class="ab-digit-roller">
+              <div class="ab-digit-column" id="col4">
+                <span>8</span><span>7</span><span>6</span><span>5</span
+                ><span>4</span><span>3</span><span>2</span><span>1</span
+                ><span>0</span>
+              </div>
+            </div>
+            <span class="ab-plus">+</span>
+          </div>
+          <div class="ab-dv-stat-description">Successful Projects</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="about-container">
+        <!-- Top text content -->
+        <div class="about-text-wrapper">
+          <div class="about-text-column">
+            <p class="left-text">
+              With extensive experience in the electrical manufacturing sector,
+              Elvinet stands as a testament to reliability and innovation. We
+              are proud to be an ISO 9001:2008 & ISO 9001:2015 certified
+              company, reflecting our stringent adherence to global quality
+              management standards.
+            </p>
+          </div>
+          <div class="about-text-column">
+            <p class="right-text">
+              Our philosophy extends beyond manufacturing; we are dedicated to
+              crafting electrical solutions that blend advanced functionality
+              with robust durability, always prioritizing the safety and
+              evolving needs of our customers. We build lasting relationships by
+              ensuring every Elvinet product delivers superior performance and
+              peace of mind.
+            </p>
+          </div>
+        </div>
+
+        <!-- About Us Button -->
+        <div class="about-button-wrapper">
+          <a href="#about" class="about-button">ABOUT US</a>
+        </div>
+
+        <!-- Social Media Icons with UPDATED HTML structure -->
+        <div class="social-icons-wrapper">
+          <a href="#" class="social-icon">
+            <span><i class="fab fa-instagram"></i></span>
+            <span><i class="fab fa-instagram"></i></span>
+          </a>
+          <a href="#" class="social-icon">
+            <span><i class="fab fa-twitter"></i></span>
+            <span><i class="fab fa-twitter"></i></span>
+          </a>
+          <a href="#" class="social-icon">
+            <span><i class="fab fa-linkedin-in"></i></span>
+            <span><i class="fab fa-linkedin-in"></i></span>
+          </a>
+          <a href="#" class="social-icon">
+            <span><i class="fab fa-facebook-f"></i></span>
+            <span><i class="fab fa-facebook-f"></i></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- about us our story  Section Ends  -->
+
+    <script src="../assets/script/script.js"></script>
+  </body>
+</html>

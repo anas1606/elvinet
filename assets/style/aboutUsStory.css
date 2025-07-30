@@ -1,0 +1,183 @@
+/* About us our story  Section starts Here */
+
+.ab-line {
+  overflow: hidden;
+  display: block;
+}
+
+.ab-letter {
+  display: inline-block;
+  visibility: hidden;
+}
+
+.ab-dv-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 74vh;
+  width: 100%;
+  background-color: var(--light-bg-color);
+  padding: 0px 40px;
+  color: var(--text-secondary);
+  box-sizing: border-box;
+}
+
+.ab-dv-main-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.ab-dv-hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex-shrink: 0;
+  order: 2;
+}
+
+.ab-dv-subtitle {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  text-align: center;
+  letter-spacing: 4px;
+  font-weight: 400;
+}
+
+.ab-dv-section h1 {
+  font-size: 14rem;
+  font-family: "Morganite", Arial, sans-serif;
+  color: var(--text-secondary);
+  font-weight: 400;
+  text-align: center;
+  line-height: 1;
+  margin: 0;
+}
+
+.ab-dv-left-side,
+.ab-dv-right-side {
+  color: var(--text-secondary);
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.ab-dv-left-side {
+  order: 1;
+}
+
+.ab-dv-right-side {
+  order: 3;
+}
+
+.ab-dv-stat-number {
+  display: flex; /* Use flexbox for alignment */
+  align-items: center;
+  justify-content: center;
+}
+
+/* Add these new rules for the scrolling animation */
+.ab-digit-roller {
+  height: 1em; /* Set height to match the font-size */
+  overflow: hidden;
+  display: inline-block;
+}
+
+.ab-digit-column {
+  display: inline-block;
+}
+
+.ab-digit-column span {
+  display: block;
+  height: 1em; /* Ensure each digit has the same height */
+}
+
+.ab-dv-stat-number {
+  font-family: "Morganite", Arial, sans-serif;
+  font-size: 14rem;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.ab-dv-stat-number .ab-plus {
+  color: #6f6b61;
+}
+
+.ab-dv-stat-description {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+@media (max-width: 1024px) {
+  .ab-dv-main-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem 14rem;
+  }
+
+  .ab-dv-hero-content {
+    order: 1;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .ab-dv-left-side {
+    order: 2;
+  }
+
+  .ab-dv-right-side {
+    order: 3;
+  }
+
+  .ab-dv-section h1 {
+    font-size: 10rem;
+  }
+  .ab-dv-stat-number {
+    font-size: 10rem;
+  }
+  .ab-dv-stat-description {
+    font-size: 1rem;
+    margin-top: -0.5rem;
+  }
+}
+
+/* Phone View */
+@media (max-width: 768px) {
+  .ab-dv-main-container {
+    gap: 2rem 6rem;
+  }
+
+  .ab-dv-section h1 {
+    font-size: 9.8rem;
+  }
+  .ab-dv-stat-number {
+    font-size: 8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .ab-dv-main-container {
+    flex-direction: row;
+    gap: 2rem 2rem;
+  }
+
+  .ab-dv-section h1 {
+    font-size: 4.8rem;
+  }
+  .ab-dv-stat-number {
+    font-size: 6rem;
+  }
+  .ab-dv-stat-description {
+    font-size: 1rem;
+    flex-wrap: wrap;
+    margin-top: -0.5rem;
+  }
+}
