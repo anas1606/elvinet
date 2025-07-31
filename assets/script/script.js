@@ -432,7 +432,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
 document.addEventListener("DOMContentLoaded", function () {
   // Select the specific section you want to animate
   const storySection = document.querySelector(".ab-dv-section");
@@ -470,13 +469,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // The master animation timeline
       masterTl
-        .to(".ab-letter", { // Animate the letters
+        .to(".ab-letter", {
+          // Animate the letters
           y: "0%",
           duration: 0.8,
           ease: "back.out(1.7)",
           stagger: 0.15,
         })
-        .to(col1, { y: col1_final_y, duration: 1.0, ease: "power2.inOut" }, "<0.2") // Animate numbers
+        .to(
+          col1,
+          { y: col1_final_y, duration: 1.0, ease: "power2.inOut" },
+          "<0.2"
+        ) // Animate numbers
         .to(col3, { y: col3_final_y, duration: 1.0, ease: "power2.inOut" }, "<")
         .to(col2, { y: 0, duration: 1.0, ease: "power2.inOut" }, "<")
         .to(col4, { y: 0, duration: 1.0, ease: "power2.inOut" }, "<");
@@ -501,7 +505,28 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     };
 
-    const observer = new IntersectionObserver(observerCallback, observerOptions);
+    const observer = new IntersectionObserver(
+      observerCallback,
+      observerOptions
+    );
     observer.observe(storySection);
   }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const locationItems = document.querySelectorAll(".ab-location-item");
+  const officeImage = document.getElementById("office-image");
+  const locationsList = document.querySelector(".ab-locations-list");
+
+  locationItems.forEach((item) => {
+    item.addEventListener("click", function () {
+      locationItems.forEach((i) => i.classList.remove("active"));
+      this.classList.add("active");
+      locationsList.classList.add("has-active");
+      const newImageSrc = this.getAttribute("data-image");
+      if (newImageSrc) {
+        officeImage.src = newImageSrc;
+      }
+    });
+  });
 });
