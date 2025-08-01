@@ -148,7 +148,7 @@
 
 .project-content h2 {
   font-family: "Morganite", Arial, sans-serif;
-  font-size: 14rem;
+  font-size: 10rem;
   font-weight: 400;
   line-height: 1.1;
   letter-spacing: 2px;
@@ -158,14 +158,13 @@
 }
 
 .project-category {
-  font-size: 0.8rem;
-  letter-spacing: 4px;
-  font-weight: 600;
-  text-transform: uppercase;
+  font-size: 1.08rem;
+  /* letter-spacing: 4px; */
+  /* font-weight: 600; */
   margin-top: 1.5rem;
   margin-bottom: 2.5rem;
   color: var(--text-secondary);
-  font-family: "Inter", Arial, sans-serif;
+  font-family: serif;
 }
 
 .view-project-btn {
