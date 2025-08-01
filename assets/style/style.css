@@ -40,6 +40,10 @@
   --border-color--project: #d3d1c8;
   --border-color: #35322d;
   --logo-scroll-duration: 30s;
+  /* Variables needed for the new regulator */
+  --regulator-bg: #f0f0f0;
+  --regulator-text-knob: #000000;
+  --regulator-shadow: #d1d1d1;
 }
 
 * {
