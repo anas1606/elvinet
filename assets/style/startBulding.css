@@ -622,7 +622,8 @@
   }
 
   .building-section h1 {
-    font-size: 4.8rem;
+    font-size: 6.8rem;
+    font-weight: 500;
   }
   .building-stat-number {
     font-size: 6rem;

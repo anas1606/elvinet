@@ -288,4 +288,13 @@
   .fp-section h1 {
     font-size: 6.8rem;
   }
+
+   .project-content h2 {
+    font-size: 4.8rem;
+  }
+
+  .project-category{
+    font-size: 0.75rem;
+  }
+
 }

@@ -147,6 +147,10 @@
   .ab-project-layout.ab-reverse .ab-project-content {
     grid-row: 2 / 3;
   }
+  
+  .ab-project-description {
+    font-size: 0.7rem;
+  }
 
   .ab-project-content h2 {
     font-size: 3.5rem;
