@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+    <title>Home</title>
+  </head>
+
+  <body>
+    <!-- Navbar Starts Here -->
+
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#">
+          <img
+            src="../assets/images/navLogo.png"
+            alt="Logo"
+            class="logo-image"
+          />
+        </a>
+      </div>
+      <div class="nav-left">
+        <ul>
+          <li>
+            <a href="index.html"><span>Home</span><span>Home</span></a>
+          </li>
+          <li>
+            <a href="pages/aboutus.html"
+              ><span>About</span><span>About</span></a
+            >
+          </li>
+          <li>
+            <a href="pages/clint.html"
+              ><span>Client</span><span>Client</span></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <ul>
+          <li>
+            <a href="./pages/blog.html"><span>Blog</span><span>Blog</span></a>
+          </li>
+          <li>
+            <a href="./pages/project/ridge.html"
+              ><span>Product</span><span>Product</span></a
+            >
+          </li>
+          <li>
+            <a href="./pages/contect.html"
+              ><span>Contact Us</span><span>Contact Us</span></a
+            >
+          </li>
+        </ul>
+      </div>
+      <button class="menu-toggle" id="mobile-menu" aria-label="Toggle Menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="36"
+          height="36"
+          fill="currentColor"
+          class="bi bi-list"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+          />
+        </svg>
+      </button>
+    </nav>
+    <!-- Navbar Ends -->
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pages/aboutus.html">About</a></li>
+        <li><a href="pages/clint.html">Client</a></li>
+        <li><a href="./pages/blog.html">Blog</a></li>
+        <li><a href="./pages/project.html">Product</a></li>
+        <li><a href="./pages/contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Navbar Ends -->
+
+    <!-- featured Project section starts  -->
+
+    <section class="building-section">
+      <div class="building-main-container">
+        <div class="building-hero-content">
+          <div class="building-subtitle">Dedicated Service & Support</div>
+          <h1>GET IN TOUCH</h1>
+          <p>
+            Your satisfaction is our priority, and we stand by the quality of
+            our products with reliable service and care.
+          </p>
+
+          <div class="social-buttons">
+            <a
+              href="#"
+              class="social-button social-button-instagram"
+              aria-label="Instagram"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="#"
+              class="social-button social-button-x"
+              aria-label="X (formerly Twitter)"
+            >
+              <i class="fab fa-xing"></i>
+            </a>
+            <a
+              href="#"
+              class="social-button social-button-linkedin"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="#"
+              class="social-button social-button-facebook"
+              aria-label="Facebook"
+            >
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stacking-container">
+      <!-- Page 1: Image Left -->
+      <div class="project-page">
+        <div class="project-layout">
+          <div class="project-image">
+            <img src="../assets/images/17B.png" />
+          </div>
+          <div class="project-content">
+            <div class="project-year">2025</div>
+            <h2>Modular Switches</h2>
+            <div class="project-category">
+              Discover our elegant and durable modular switches that seamlessly
+              blend with modern interiors. Available in various finishes and
+              designs, offering both aesthetics and functionality for every
+              space.
+            </div>
+            <a href="#" class="view-project-btn">VIEW PROJECT</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Page 2: Image Right -->
+      <div class="project-page">
+        <div class="project-layout reverse">
+          <div class="project-image">
+            <img src="../assets/images/10B.png" />
+          </div>
+          <div class="project-content">
+            <div class="project-year">2024</div>
+            <h2>Sockets & Plug Tops</h2>
+            <div class="project-category">
+              Safe and versatile power solutions for every connection. Our
+              sockets are designed for maximum compatibility and protection,
+              ensuring reliable power delivery.
+            </div>
+            <a href="#" class="view-project-btn">VIEW PROJECT</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Page 3: Image Left -->
+      <div class="project-page">
+        <div class="project-layout">
+          <div class="project-image">
+            <img src="../assets/images/25B.png" />
+          </div>
+          <div class="project-content">
+            <div class="project-year">2023</div>
+            <h2>Fan Regulators</h2>
+            <div class="project-category">
+              Achieve precise control over your lighting and ventilation with
+              our efficient and smooth-operating fan regulators and lamp
+              dimmers. Enhance comfort and save energy.
+            </div>
+            <a href="#" class="view-project-btn">VIEW PROJECT</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Page 4: Image Right -->
+      <div class="project-page">
+        <div class="project-layout reverse">
+          <div class="project-image">
+            <img src="../assets/images/mcb.jpg" />
+          </div>
+          <div class="project-content">
+            <div class="project-year">2022</div>
+            <h2>MCB</h2>
+            <div class="project-category">
+              Ensure enhanced electrical safety with our range of protection and
+              support modules, vital components for safeguarding your electrical
+              circuits and appliances.
+            </div>
+            <a href="#" class="view-project-btn">VIEW PROJECT</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Page 5: Image Left -->
+      <div class="project-page">
+        <div class="project-layout">
+          <div class="project-image">
+            <img
+              src="https://images.unsplash.com/photo-1616046229478-9901c5536a45?q=80&w=1780&auto=format&fit=crop"
+            />
+          </div>
+          <div class="project-content">
+            <div class="project-year">2021</div>
+            <h2>Artisan</h2>
+            <div class="project-category">Commercial Space</div>
+            <a href="#" class="view-project-btn">VIEW PROJECT</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- featured Project section End -->
+
+    <!-- Start Building Section Starts  -->
+
+    <section class="building-section">
+      <div class="main-cta">
+        <div class="building-main-container">
+          <div class="building-hero-content">
+            <div class="building-subtitle">Partner with Elvinet</div>
+            <!-- The new Regulator -->
+            <div class="regulator">
+              <div class="container">
+                <div class="de">
+                  <div class="den">
+                    <hr class="line" />
+                    <hr class="line" />
+                    <hr class="line" />
+
+                    <div class="switch">
+                      <label for="switch_off"><span>OFF</span></label>
+                      <label for="switch_1"><span>1</span></label>
+                      <label for="switch_2"><span>2</span></label>
+                      <label for="switch_3"><span>3</span></label>
+                      <label for="switch_4"><span>4</span></label>
+                      <label for="switch_5"><span>5</span></label>
+
+                      <input
+                        type="radio"
+                        checked=""
+                        name="switch"
+                        id="switch_off"
+                      />
+                      <input type="radio" name="switch" id="switch_1" />
+                      <input type="radio" name="switch" id="switch_2" />
+                      <input type="radio" name="switch" id="switch_3" />
+                      <input type="radio" name="switch" id="switch_4" />
+                      <input type="radio" name="switch" id="switch_5" />
+
+                      <div class="light"><span></span></div>
+
+                      <div class="dot"><span></span></div>
+
+                      <div class="dene">
+                        <div class="denem">
+                          <div class="deneme"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h1>
+              <div id="line1" class="line">
+                <!-- <span class="letter">L</span><span class="letter">E</span
+              ><span class="letter">T</span><span class="letter">'</span
+              ><span class="letter">S</span> <span class="letter">D</span
+              ><span class="letter">E</span><span class="letter">S</span
+              ><span class="letter">I</span><span class="letter">G</span
+              ><span class="letter">N</span> -->
+                LET'S DESIGN
+              </div>
+            </h1>
+
+            <p>
+              Whether you're an architect planning a new development, a builder
+              seeking durable electrical components, an electrical contractor
+              requiring reliable accessories, or a homeowner upgrading your
+              living space, Elvinet is your ideal partner. We are dedicated to
+              providing the high-quality, certified electrical devices and
+              accessories you need to create inspiring, functional, and enduring
+              electrical environments.
+            </p>
+            <div class="about-button-wrapper">
+              <a href="#about" class="about-button">ABOUT US</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Start Building Section Ends  -->
+
+    <!-- Footer starts here  -->
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="footer-logo">✳</div>
+          <p class="tagline">ARCHITECTURE THAT ELEVATES EVERYDAY LIVING.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="X"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a href="#" aria-label="LinkedIn"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a href="#" aria-label="Facebook"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="footer-nav-grid">
+          <div class="nav-column">
+            <a href="#" class="nav-link">HOME 01</a>
+            <a href="#" class="nav-link">HOME 02</a>
+            <a href="#" class="nav-link">HOME 03</a>
+          </div>
+          <div class="nav-column">
+            <a href="#" class="nav-link">PROJECTS 01</a>
+            <a href="#" class="nav-link">PROJECTS 02</a>
+            <a href="#" class="nav-link">PROJECTS 03</a>
+          </div>
+          <div class="nav-column">
+            <a href="#" class="nav-link">CONTACT 01</a>
+            <a href="#" class="nav-link">CONTACT 02</a>
+            <a href="#" class="nav-link">CONTACT 03</a>
+          </div>
+          <div class="nav-column">
+            <a href="#" class="nav-link">SERVICES</a>
+            <a href="#" class="nav-link">ABOUT</a>
+            <a href="#" class="nav-link">BLOG</a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-credits">
+            <p>POWERED BY <strong>WEBFLOW</strong></p>
+            <p>CREATED BY <strong>FLOWAZE</strong></p>
+          </div>
+          <div class="footer-legal">
+            <a href="#">STYLE GUIDE</a>
+            <a href="#">LICENSES</a>
+            <a href="#">CHANGELOG</a>
+          </div>
+        </div>
+        <div class="footer-bottom-text">
+          <h2>ELVINET</h2>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Footer ends here  -->
+    <script src="../assets/script/script.js"></script>
+  </body>
+</html>
