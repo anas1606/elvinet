@@ -30,7 +30,7 @@
   font-style: normal;
 }
 
-:root {
+/* :root {
   --dark-bg-color: #25211d;
   --light-bg-color: #fef6f6;
   --text-primary: #ffffff;
@@ -40,10 +40,18 @@
   --border-color--project: #d3d1c8;
   --border-color: #35322d;
   --logo-scroll-duration: 30s;
-  /* Variables needed for the new regulator */
-  --regulator-bg: #f0f0f0;
-  --regulator-text-knob: #000000;
-  --regulator-shadow: #d1d1d1;
+} */
+
+:root {
+  --dark-bg-color: #121212;
+  --light-bg-color: #faf9f6;
+  --text-primary: #faf9f6;
+  --text-secondary: #121212;
+  --text-hover: #d32f2f;
+  --border-radius: 14px;
+  --border-color--project: #efebe4;
+  --border-color: #2a2a2a;
+  --logo-scroll-duration: 30s;
 }
 
 * {

@@ -235,17 +235,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Updated cardData array with your local paths
   const cardData = [
-    // "./assets/images/13.png",
-    "./assets/images/16.2.png",
-    "./assets/images/16.2.png",
-    "./assets/images/16A.png",
-    "./assets/images/28A.png",
-    "./assets/images/6.3.png",
-    "./assets/images/16.2.png",
-    "./assets/images/16A.png",
-    "./assets/images/28A.png",
-    "./assets/images/6.3.png",
-    "./assets/images/16.2.png",
+    // "./assets/images/13.webp",
+    "./assets/images/16.2.webp",
+    "./assets/images/16.2.webp",
+    "./assets/images/16A.webp",
+    "./assets/images/28A.webp",
+    "./assets/images/6.3.webp",
+    "./assets/images/16.2.webp",
+    "./assets/images/16A.webp",
+    "./assets/images/28A.webp",
+    "./assets/images/6.3.webp",
+    "./assets/images/16.2.webp",
   ];
 
   const cards = cardData.map((url) => {
