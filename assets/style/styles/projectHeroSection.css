@@ -3,9 +3,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--light-bg-color);
-  color: var(--text-secondary);
-  height: calc(90vh - 4.6rem);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../images/IMAGICA.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--text-primary);
+  height: calc(100vh - 4.6rem);
   width: 100%;
   padding: 0px 40px;
   position: relative;
@@ -35,7 +39,7 @@
   font-family: "Morganite", sans-serif;
   font-size: 20rem;
   font-weight: 200;
-  color: var(--text-secondary);
+  color: var(--text-primary);
   line-height: 1;
   letter-spacing: 0.02em;
   margin: 0;
@@ -45,7 +49,7 @@
 .ridge-hero-subtitle {
   font-size: 1rem;
   font-weight: 400;
-  color: var(--text-secondary);
+  color: var(--text-primary);
   max-width: 680px;
   line-height: 1.6;
   margin: 2rem 0 0 0;

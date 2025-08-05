@@ -23,13 +23,14 @@
 .objective-section {
   background-color: var(--light-bg-color);
   color: var(--text-secondary);
-  padding: 60px 40px;
+  /* padding: 60px 40px; */
 }
 
 .objective-full-image {
   width: 100%;
   object-fit: cover;
   display: block;
+  padding: 60px 40px;
 }
 
 .objective-content-wrapper {
@@ -42,6 +43,7 @@
   font-size: 6rem;
   font-weight: 200;
   margin-bottom: 2rem;
+  padding: 0px 40px;
 }
 
 .result-title {
@@ -56,6 +58,7 @@
   font-size: 1.1rem;
   line-height: 1.8;
   margin-bottom: 2rem;
+  padding: 0px 40px;
 }
 
 .objective-list {
@@ -71,9 +74,10 @@
 }
 
 .snap-scroll-wrapper {
-  padding: 2rem 0;
+  /* padding: 2rem 0; */
   /* max-width: 1200px; */
   margin: auto;
+  padding: 60px 40px;
 }
 
 .snap-scroll-wrapper h2.section-title {

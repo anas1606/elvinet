@@ -2,6 +2,10 @@
   color: red;
 }
 
+.active-nav-link span {
+  color: #d32f2f;
+}
+
 .social-buttons {
   display: flex;
   justify-content: center;
@@ -62,4 +66,37 @@
 .main-cta {
   padding-top: 4rem;
   width: 100%;
+}
+
+.stroke-text {
+  font-size: 5rem;
+  letter-spacing: 5px;
+  align-self: flex-end;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  -webkit-text-stroke-color: rgba(0, 0, 0, 0.594);
+  -webkit-text-stroke-width: 1px;
+  color: transparent;
+}
+
+.stroke-text-left {
+  font-size: 5rem;
+  letter-spacing: 5px;
+  align-self: flex-start;
+  margin-right: 2rem;
+  -webkit-text-stroke-color: rgba(0, 0, 0, 0.594);
+  -webkit-text-stroke-width: 1px;
+  color: transparent;
+}
+
+@media (max-width: 480px) {
+  .stroke-text-left {
+    font-size: 3.6rem;
+    text-align: center;
+  }
+  .stroke-text {
+    font-size: 3.6rem;
+
+    text-align: center;
+  }
 }
