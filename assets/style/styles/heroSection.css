@@ -2,7 +2,7 @@
 
 .hero-section {
   display: flex;
-  background-image: url("../../images/heroBg.png");
+  background-image: url("../../images/heroBg.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -68,7 +68,7 @@
   height: 100%;
   width: 100%;
   top: 0rem;
-  background-image: url("../../images/boardBg.png");
+  background-image: url("../../images/boardBg.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -80,7 +80,7 @@
   height: 100%;
   width: 100%;
   right: 0;
-  background-image: url("../../images/familyBg.png");
+  background-image: url("../../images/familyBg.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
