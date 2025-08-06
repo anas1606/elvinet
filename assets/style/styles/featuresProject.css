@@ -297,6 +297,13 @@
   height: 100%;
   width: 100%;
 }
+.doorbell-img {
+  background-image: url("../../images/DOORBELL.webp");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
 
 .project-image img {
   width: 100%;
