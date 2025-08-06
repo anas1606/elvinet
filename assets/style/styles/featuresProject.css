@@ -219,6 +219,85 @@
   width: 100%;
 }
 
+.exilio-prod-img {
+  background-image: url("../../images/outerExilio.webp");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+.altraPlus-img {
+  background-image: url("../../images/ALTRAPLUS.webp");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+.altra-img {
+  background-image: url("../../images/ALTRA.webp");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+.archer-img {
+  background-image: url("../../images/ARCHER.webp");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+.trigonCP-img {
+  background-image: url("../../images/TRIGONCOVERPLATES.webp");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+.coverPlate-img {
+  background-image: url("../../images/COVERPLATES.webp");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+.exilo-img {
+  background-image: url("../../images/EXILO.webp");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+.curves-img {
+  background-image: url("../../images/CURVES.webp");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+.evan-prod-img {
+  background-image: url("../../images/EVAN.webp");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+.extension-img {
+  background-image: url("../../images/EXTENSION.webp");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
 .project-image img {
   width: 100%;
   height: 100%;
