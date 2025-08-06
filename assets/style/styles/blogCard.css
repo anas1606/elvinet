@@ -132,7 +132,7 @@
 }
 
 .card-title {
-  font-size: 4.5em;
+  font-size: 3.4em;
   font-weight: 200;
   color: var(--text-primary);
   margin-bottom: 16px;
@@ -154,6 +154,14 @@
   font-weight: 300;
 }
 
+.read-more {
+  color: var(--text-primary);
+  text-decoration: none;
+  transform: translateY(30px);
+  transition: all 0.5s ease 0.1s;
+  opacity: 0;
+}
+
 .card:hover .card-title {
   transform: translateY(-8px);
   font-size: 2.2rem;
@@ -164,6 +172,14 @@
   transform: translateY(0);
 }
 
+.card:hover .read-more {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.read-more:hover {
+  color: var(--text-hover);
+}
 .card-3 .card-content,
 .card-4 .card-content,
 .card-6 .card-content,
