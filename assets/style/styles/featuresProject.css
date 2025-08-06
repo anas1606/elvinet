@@ -86,7 +86,7 @@
 }
 
 .project-page {
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   position: sticky;
   top: 0;
@@ -109,63 +109,42 @@
 .project-image {
   width: 100%;
   height: 100vh;
-  background-color: var(--light-bg-color);
 }
 
-.ms-img-left {
-  width: 100%;
-  height: 100vh;
-  background-image: url("../../images/ms1.webp");
-  background-size: cover;
-  background-position: center;
-}
-
-.ms-img-right {
-  background-image: url("../../images/ms2.webp");
+.ms-img {
+  background-image: url("../../images/ms.webp");
   background-size: cover;
   background-position: center;
   height: 100%;
   width: 100%;
+  z-index: 4;
 }
 
-.sp-img-left {
+.sp-img {
   width: 100%;
   height: 100vh;
-  background-image: url("../../images/sp1.webp");
+  background-image: url("../../images/sp.webp");
   background-size: cover;
   background-position: center;
+  z-index: 4;
 }
 
-.sp-img-right {
-  background-image: url("../../images/sp2.webp");
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-  width: 100%;
-}
-
-.fr-img-left {
+.fr-img {
   width: 100%;
   height: 100vh;
-  background-image: url("../../images/fr2.webp");
+  background-image: url("../../images/fr.webp");
   background-size: cover;
   background-position: center;
+  z-index: 4;
 }
 
-.fr-img-right {
-  background-image: url("../../images/fr1.webp");
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-  width: 100%;
-}
-
-.mcb-img-left {
+.mcb-img {
   width: 100%;
   height: 100vh;
-  background-image: url("../../images/mcb1.webp");
+  background-image: url("../../images/MCB.webp");
   background-size: cover;
   background-position: center;
+  z-index: 4;
 }
 
 .mcb-img-right {
@@ -176,128 +155,64 @@
   width: 100%;
 }
 
-.imagica-prod-left {
-  background-image: url("../../images/imagica1.webp");
+.imagica-prod-img {
+  background-image: url("../../images/IMAGICA.webp");
   background-size: cover;
   background-position: center;
   height: 100%;
   width: 100%;
 }
 
-.imagica-prod-right {
-  background-image: url("../../images/imagica2.webp");
+.imapex-img {
+  background-image: url("../../images/IMPEX.webp");
   background-size: cover;
   background-position: center;
   height: 100%;
   width: 100%;
 }
 
-.imapex-left {
-  background-image: url("../../images/impex1.webp");
+.imagee-img {
+  background-image: url("../../images/IMAGE.webp");
   background-size: cover;
   background-position: center;
   height: 100%;
   width: 100%;
 }
 
-.imapex-right {
-  background-image: url("../../images/impex2.webp");
+.eliva-prod {
+  background-image: url("../../images/ELIVA.webp");
   background-size: cover;
   background-position: center;
   height: 100%;
   width: 100%;
 }
 
-.imagee-left {
-  background-image: url("../../images/imageS1.webp");
+.eline-img {
+  background-image: url("../../images/ELINE.webp");
   background-size: cover;
   background-position: center;
   height: 100%;
   width: 100%;
 }
 
-.imagee-right {
-  background-image: url("../../images/imageS2.webp");
+.eli-img {
+  background-image: url("../../images/ELI.webp");
   background-size: cover;
   background-position: center;
   height: 100%;
   width: 100%;
 }
 
-.eliva-prod-left {
-  background-image: url("../../images/ELIVA1.webp");
+.liva-img {
+  background-image: url("../../images/LIVA.webp");
   background-size: cover;
   background-position: center;
   height: 100%;
   width: 100%;
 }
 
-.eliva-prod-right {
-  background-image: url("../../images/ELIVA2.webp");
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-  width: 100%;
-}
-
-.eline-left {
-  background-image: url("../../images/eline1.webp");
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-  width: 100%;
-}
-
-.eline-right {
-  background-image: url("../../images/eline2.webp");
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-  width: 100%;
-}
-
-.eli-left {
-  background-image: url("../../images/eli2.webp");
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-  width: 100%;
-}
-
-.eli-right {
-  background-image: url("../../images/eli.webp");
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-  width: 100%;
-}
-
-.liva-left {
-  background-image: url("../../images/liva1.webp");
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-  width: 100%;
-}
-
-.liva-right {
-  background-image: url("../../images/liva2.webp");
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-  width: 100%;
-}
-
-.elvin-left {
-  background-image: url("../../images/elvin2.webp");
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-  width: 100%;
-}
-
-.elvin-right {
-  background-image: url("../../images/elvin1.webp");
+.elvin-img {
+  background-image: url("../../images/ELVIN.webp");
   background-size: cover;
   background-position: center;
   height: 100%;
