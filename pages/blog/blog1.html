@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ridge</title>
+    <link rel="stylesheet" href="../../assets/style/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  </head>
+  <body>
+    <!-- Navbar Starts Here -->
+
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#">
+          <img
+            src="../../assets/images/navLogo.webp"
+            alt="Logo"
+            class="logo-image"
+          />
+        </a>
+      </div>
+      <div class="nav-left">
+        <ul>
+          <li>
+            <a href="../../index.html"><span>Home</span><span>Home</span></a>
+          </li>
+          <li>
+            <a href="../aboutus.html"><span>About</span><span>About</span></a>
+          </li>
+          <li>
+            <a href="pages/clint.html"
+              ><span>Client</span><span>Client</span></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <ul>
+          <li>
+            <a href="../pages/blog.html"><span>Blog</span><span>Blog</span></a>
+          </li>
+          <li>
+            <a href="../pages/project.html"
+              ><span>Product</span><span>Product</span></a
+            >
+          </li>
+          <li>
+            <a href="../pages/contact.html"
+              ><span>Contact Us</span><span>Contact Us</span></a
+            >
+          </li>
+        </ul>
+      </div>
+      <button class="menu-toggle" id="mobile-menu" aria-label="Toggle Menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="36"
+          height="36"
+          fill="currentColor"
+          class="bi bi-list"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+          />
+        </svg>
+      </button>
+    </nav>
+    <!-- Navbar Ends -->
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay">
+      <ul>
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../aboutus.html">About</a></li>
+        <li><a href="../clint.html">Client</a></li>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../project.html">Product</a></li>
+        <li><a href="../contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Navbar Ends -->
+
+    <!-- Blog Detail Hero Section -->
+    <section class="blog-detail-hero">
+      <div class="blog-detail-hero-container">
+        <div class="blog-breadcrumb">
+          <a href="../../pages/blog.html">Blog</a>
+          <span>/</span>
+          <span>Mountain Peaks</span>
+        </div>
+        <h1 class="blog-detail-title">
+          Mountain Peaks: A Journey Through Nature's Majesty
+        </h1>
+        <div class="blog-meta">
+          <span class="blog-date">January 15, 2025</span>
+          <span class="blog-category">Nature & Adventure</span>
+          <span class="blog-read-time">8 min read</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Detail Content -->
+    <section class="blog-detail-content">
+      <div class="blog-detail-container">
+        <div class="blog-content-wrapper">
+          <!-- Featured Image -->
+          <div class="blog-featured-image">
+            <img
+              src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=600&fit=crop&crop=entropy&auto=format&q=80"
+              alt="Mountain Peaks"
+            />
+          </div>
+
+          <!-- Blog Content -->
+          <div class="blog-article-content">
+            <p class="blog-intro">
+              Discover the breathtaking beauty of untouched wilderness where
+              every summit tells a story of ancient majesty and endless
+              adventure waiting to be explored. From the snow-capped peaks that
+              pierce the clouds to the serene valleys below, mountain landscapes
+              offer an unparalleled connection to nature's raw power and beauty.
+            </p>
+
+            <h2>The Call of the Mountains</h2>
+            <p>
+              There's something inherently magnetic about mountains that draws
+              explorers, photographers, and nature enthusiasts from around the
+              world. These towering giants of stone and earth represent more
+              than just geological formations – they're symbols of perseverance,
+              natural beauty, and the untamed spirit of our planet.
+            </p>
+
+            <blockquote class="blog-quote">
+              "The mountains are calling and I must go. And I will work on while
+              I can, studying incessantly." - John Muir
+            </blockquote>
+
+            <h2>Planning Your Mountain Adventure</h2>
+            <p>
+              Whether you're planning a day hike or a multi-day expedition,
+              proper preparation is essential for a safe and enjoyable mountain
+              experience. Here are some key considerations:
+            </p>
+
+            <ul class="blog-list">
+              <li>Research weather conditions and seasonal accessibility</li>
+              <li>Invest in proper hiking gear and safety equipment</li>
+              <li>Plan your route and inform others of your itinerary</li>
+              <li>
+                Pack essential supplies including food, water, and first aid
+              </li>
+              <li>Respect local wildlife and Leave No Trace principles</li>
+            </ul>
+
+            <div class="blog-image-gallery">
+              <img
+                src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&h=400&fit=crop&crop=entropy&auto=format&q=80"
+                alt="Mountain trail"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1473580044384-7ba9967e16a0?w=600&h=400&fit=crop&crop=entropy&auto=format&q=80"
+                alt="Mountain sunrise"
+              />
+            </div>
+
+            <h2>The Transformative Power of Nature</h2>
+            <p>
+              Mountains have a unique ability to put life into perspective.
+              Standing before these ancient giants, we're reminded of our place
+              in the natural world and the importance of preserving these
+              pristine environments for future generations.
+            </p>
+
+            <p>
+              The physical challenge of mountain exploration is matched only by
+              its mental and spiritual rewards. Each step upward is a step
+              toward self-discovery, pushing personal boundaries while
+              surrounded by some of the most spectacular scenery on Earth.
+            </p>
+
+            <h2>Conservation and Responsibility</h2>
+            <p>
+              As we venture into these wild spaces, we carry the responsibility
+              to protect and preserve them. Mountain ecosystems are particularly
+              fragile and face increasing pressure from climate change, tourism,
+              and development. By practicing responsible recreation and
+              supporting conservation efforts, we can help ensure these majestic
+              landscapes remain intact for generations to come.
+            </p>
+          </div>
+
+          <!-- Tags -->
+          <div class="blog-tags">
+            <span class="tag">Nature</span>
+            <span class="tag">Adventure</span>
+            <span class="tag">Mountains</span>
+            <span class="tag">Photography</span>
+            <span class="tag">Hiking</span>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="blog-sidebar">
+          <div class="sidebar-widget">
+            <h3>Related Articles</h3>
+            <div class="related-posts">
+              <a href="#" class="related-post">
+                <img
+                  src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=100&h=80&fit=crop&crop=entropy&auto=format&q=80"
+                  alt="Ocean Depths"
+                />
+                <div class="related-post-content">
+                  <h5>Ocean Depths</h5>
+                  <span>January 10, 2025</span>
+                </div>
+              </a>
+              <a href="#" class="related-post">
+                <img
+                  src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=100&h=80&fit=crop&crop=entropy&auto=format&q=80"
+                  alt="Forest Serenity"
+                />
+                <div class="related-post-content">
+                  <h5>Forest Serenity</h5>
+                  <span>January 8, 2025</span>
+                </div>
+              </a>
+              <a href="#" class="related-post">
+                <img
+                  src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=100&h=80&fit=crop&crop=entropy&auto=format&q=80"
+                  alt="Golden Horizon"
+                />
+                <div class="related-post-content">
+                  <h5>Golden Horizon</h5>
+                  <span>January 5, 2025</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="sidebar-widget">
+            <h3>Categories</h3>
+            <ul class="category-list">
+              <li><a href="#">Nature & Adventure</a></li>
+              <li><a href="#">Photography Tips</a></li>
+              <li><a href="#">Travel Guides</a></li>
+              <li><a href="#">Conservation</a></li>
+              <li><a href="#">Equipment Reviews</a></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Footer starts here  -->
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="footer-logo">✳</div>
+          <p class="tagline">ARCHITECTURE THAT ELEVATES EVERYDAY LIVING.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="X"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a href="#" aria-label="LinkedIn"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a href="#" aria-label="Facebook"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="footer-nav-grid">
+          <div class="nav-column">
+            <a href="#" class="nav-link">HOME 01</a>
+            <a href="#" class="nav-link">HOME 02</a>
+            <a href="#" class="nav-link">HOME 03</a>
+          </div>
+          <div class="nav-column">
+            <a href="#" class="nav-link">PROJECTS 01</a>
+            <a href="#" class="nav-link">PROJECTS 02</a>
+            <a href="#" class="nav-link">PROJECTS 03</a>
+          </div>
+          <div class="nav-column">
+            <a href="#" class="nav-link">CONTACT 01</a>
+            <a href="#" class="nav-link">CONTACT 02</a>
+            <a href="#" class="nav-link">CONTACT 03</a>
+          </div>
+          <div class="nav-column">
+            <a href="#" class="nav-link">SERVICES</a>
+            <a href="#" class="nav-link">ABOUT</a>
+            <a href="#" class="nav-link">BLOG</a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-credits">
+            <p>POWERED BY <strong>WEBFLOW</strong></p>
+            <p>CREATED BY <strong>FLOWAZE</strong></p>
+          </div>
+          <div class="footer-legal">
+            <a href="#">STYLE GUIDE</a>
+            <a href="#">LICENSES</a>
+            <a href="#">CHANGELOG</a>
+          </div>
+        </div>
+        <div class="footer-bottom-text">
+          <h2>ELVINET</h2>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Footer ends here  -->
+
+    <script src="../../assets/script/script.js"></script>
+  </body>
+</html>

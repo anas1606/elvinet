@@ -1,0 +1,204 @@
+.blog-section {
+  min-height: 64vh;
+}
+
+/* Main section wrapper */
+.blog-card-section {
+  width: 100%;
+  background-color: var(--light-bg-color);
+  padding: 100px 20px;
+}
+
+/* Main container now uses Flexbox in a column direction */
+.blog-card-main-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* New classes for Flexbox structure */
+.flex-row {
+  display: flex;
+  gap: 24px;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex: 1;
+  /* Each column takes up equal space in a row */
+}
+
+/* Card styles remain the same for the visual design */
+.card {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  /* Ensure cards fill their column */
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+  transition: all 0.6s ease;
+}
+
+.card:hover::before {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
+}
+
+.card:hover {
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.2);
+}
+
+/* Setting explicit heights to replicate the grid layout */
+/* Height = (rows * 120px) + ((rows - 1) * 24px gap) */
+.card-1,
+.card-5 {
+  height: 552px;
+  /* 4 rows */
+}
+
+.card-2,
+.card-3,
+.card-4,
+.card-6,
+.card-7 {
+  height: 264px;
+  /* 2 rows */
+}
+
+/* Background images are now applied directly to the cards */
+.card-1 {
+  background-image: url("https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=900&h=800&fit=crop&crop=entropy&auto=format&q=80");
+}
+
+.card-2 {
+  background-image: url("https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=900&h=500&fit=crop&crop=entropy&auto=format&q=80");
+}
+
+.card-3 {
+  background-image: url("https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=500&fit=crop&crop=entropy&auto=format&q=80");
+}
+
+.card-4 {
+  background-image: url("https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1400&h=500&fit=crop&crop=entropy&auto=format&q=80");
+}
+
+.card-5 {
+  background-image: url("https://images.unsplash.com/photo-1473580044384-7ba9967e16a0?w=900&h=800&fit=crop&crop=entropy&auto=format&q=80");
+}
+
+.card-6 {
+  background-image: url("https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=900&h=500&fit=crop&crop=entropy&auto=format&q=80");
+}
+
+.card-7 {
+  background-image: url("https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1400&h=500&fit=crop&crop=entropy&auto=format&q=80");
+}
+
+.card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 40px;
+  z-index: 2;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+}
+
+.card-title {
+  font-size: 4.5em;
+  font-weight: 200;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  transform: translateY(0);
+  transition: all 0.4s ease;
+  letter-spacing: 0.04em;
+  font-family: "Morganite", sans-serif;
+}
+
+.card-text {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.2em;
+  line-height: 1.6;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.5s ease 0.1s;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+  font-weight: 300;
+}
+
+.card:hover .card-title {
+  transform: translateY(-8px);
+  font-size: 2.2rem;
+}
+
+.card:hover .card-text {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-3 .card-content,
+.card-4 .card-content,
+.card-6 .card-content,
+.card-7 .card-content {
+  padding: 30px;
+}
+
+.card-3 .card-title,
+.card-4 .card-title,
+.card-6 .card-title,
+.card-7 .card-title {
+  font-size: 1.8em;
+}
+
+.card-3:hover .card-title,
+.card-4:hover .card-title,
+.card-6:hover .card-title,
+.card-7:hover .card-title {
+  font-size: 1.6em;
+}
+
+.card-3 .card-text,
+.card-4 .card-text,
+.card-6 .card-text,
+.card-7 .card-text {
+  font-size: 1em;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .flex-row {
+    flex-direction: column;
+  }
+
+  .card {
+    min-height: 400px;
+  }
+}
