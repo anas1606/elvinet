@@ -64,15 +64,29 @@
 }
 
 .left-side {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0rem;
-  background-image: url("../../images/boardBg.webp");
+  background-image: var(--bg-image-current);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  animation: slideDown 1.2s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.left-side::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: var(--bg-image-next);
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.left-side.is-fading::before {
+  opacity: 1;
 }
 
 .right-side {

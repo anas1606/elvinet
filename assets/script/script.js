@@ -346,3 +346,61 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const leftSide = document.querySelector(".left-side");
+
+  if (!leftSide) {
+    console.error("Element with class '.left-side' not found!");
+    return;
+  }
+
+  const images = [
+    "/assets/images/boardBg.webp",
+    "/assets/images/boardBg.webp",
+    "/assets/images/boardBg.webp",
+    "/assets/images/boardBg.webp",
+    "/assets/images/boardBg.webp",
+  ];
+
+  const slideInterval = 3000;
+  const startDelay = 1000;
+  let currentIndex = 0;
+
+  function preloadImages() {
+    images.forEach((src, index) => {
+      const img = new Image();
+
+      img.src = src;
+    });
+  }
+
+  function startSlideshow() {
+    leftSide.style.setProperty(
+      "--bg-image-current",
+      `url(${images[currentIndex]})`
+    );
+    setTimeout(() => {
+      setInterval(changeImage, slideInterval);
+    }, startDelay);
+  }
+
+  function changeImage() {
+    const nextIndex = (currentIndex + 1) % images.length;
+    leftSide.style.setProperty("--bg-image-next", `url(${images[nextIndex]})`);
+    leftSide.classList.add("is-fading");
+
+    leftSide.addEventListener("transitionend", function onTransitionEnd() {
+      leftSide.style.setProperty(
+        "--bg-image-current",
+        `url(${images[nextIndex]})`
+      );
+      leftSide.classList.remove("is-fading");
+      currentIndex = nextIndex;
+      leftSide.removeEventListener("transitionend", onTransitionEnd);
+    });
+  }
+
+  preloadImages();
+  startSlideshow();
+});
