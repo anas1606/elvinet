@@ -356,11 +356,11 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   const images = [
-    "/assets/images/boardBg.webp",
-    "/assets/images/boardBg.webp",
-    "/assets/images/boardBg.webp",
-    "/assets/images/boardBg.webp",
-    "/assets/images/boardBg.webp",
+    "../../../assets/images/boardBg.webp",
+    "../../../assets/images/boardBg.webp",
+    "../../../assets/images/boardBg.webp",
+    "../../../assets/images/boardBg.webp",
+    "../../../assets/images/boardBg.webp",
   ];
 
   const slideInterval = 3000;
