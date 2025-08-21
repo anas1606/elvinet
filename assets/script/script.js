@@ -346,7 +346,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-
 document.addEventListener("DOMContentLoaded", function () {
   const leftSide = document.querySelector(".left-side");
 
@@ -363,26 +362,26 @@ document.addEventListener("DOMContentLoaded", function () {
     "../../../assets/images/boardBg.webp",
   ];
 
-  const slideInterval = 3000;
-  const startDelay = 1000;
+  const slideInterval = 3000; // time between slides
+  const startDelay = 1000; // delay before starting slideshow
   let currentIndex = 0;
 
   function preloadImages() {
-    images.forEach((src, index) => {
+    images.forEach((src) => {
       const img = new Image();
-
       img.src = src;
     });
   }
 
   function startSlideshow() {
+    // Set first image
     leftSide.style.setProperty(
       "--bg-image-current",
       `url(${images[currentIndex]})`
     );
-    setTimeout(() => {
-      setInterval(changeImage, slideInterval);
-    }, startDelay);
+
+    // Start loop
+    setInterval(changeImage, slideInterval);
   }
 
   function changeImage() {
@@ -402,5 +401,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   preloadImages();
-  startSlideshow();
+
+  // Delay slideshow start by 1s
+  setTimeout(startSlideshow, startDelay);
 });
